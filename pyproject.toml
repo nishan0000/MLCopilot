@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "mlcopilot"
+version = "0.1.0"
+description = ""
+authors = ["nishan0000 <mdnishan006@gmail.com>"]
+readme = "README.md"
+packages = [{include = "mlcopilot", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "*"
+numpy = "*"
+seaborn = "*"
+matplotlib = "*"
+langchain = "^0.1.11"
+ipykernel = "^6.29.3"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
